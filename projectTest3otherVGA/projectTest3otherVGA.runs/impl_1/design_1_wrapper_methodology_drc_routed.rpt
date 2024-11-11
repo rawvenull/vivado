@@ -1,0 +1,542 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sun Oct 27 17:04:24 2024
+| Host         : Marlofst running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7s50csga324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 93
++-----------+------------------+-----------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                               | Violations |
++-----------+------------------+-----------------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree        | 1          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks            | 1          |
+| TIMING-7  | Critical Warning | No common node between related clocks                     | 1          |
+| TIMING-8  | Critical Warning | No common period between related clocks                   | 1          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                 | 1          |
+| TIMING-51 | Critical Warning | No common phase between related clocks from parallel CMBs | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                              | 4          |
+| TIMING-9  | Warning          | Unknown CDC Logic                                         | 1          |
+| TIMING-16 | Warning          | Large setup violation                                     | 64         |
+| ULMTCS-1  | Warning          | Control Sets use limits recommend reduction               | 1          |
+| XDCB-5    | Warning          | Runtime inefficient way to find pin objects               | 1          |
+| REQP-1959 | Advisory         | connects_SERDES_RST_driver_not_FF                         | 16         |
++-----------+------------------+-----------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock design_1_i/clk_wiz_0/inst/clk_in1 is defined downstream of clock clk_pll_i and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and clk_25MHz_design_1_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks clk_25MHz_design_1_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks clk_pll_i and clk_25MHz_design_1_clk_wiz_0_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks clk_25MHz_design_1_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-8#1 Critical Warning
+No common period between related clocks  
+The clocks clk_pll_i and clk_25MHz_design_1_clk_wiz_0_0 are found related (timed together) but have no common (expandable) period
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock design_1_i/clk_wiz_0/inst/clk_in1 is created on an inappropriate internal pin design_1_i/clk_wiz_0/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-51#1 Critical Warning
+No common phase between related clocks from parallel CMBs  
+The clocks clk_pll_i and clk_25MHz_design_1_clk_wiz_0_0 are timed together but have no phase relationship. The design could fail in hardware. The clocks originate from two parallel Clock Modifying Blocks and at least one of the MMCM or PLLs clock dividers is not set to 1. To be safely timed, all MMCMs or PLLs involved in parallel clocking must have the clock divider set to 1.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/hdmi_tx_0/inst/encr/oserdes_m_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/hdmi_tx_0/inst/encg/dout_reg[9]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/cnt_reg[1]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/cnt_reg[2]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/cnt_reg[3]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/cnt_reg[4]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/dout_reg[0]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/dout_reg[1]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/dout_reg[2]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/dout_reg[3]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/dout_reg[4]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/dout_reg[5]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/dout_reg[6]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/dout_reg[7]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/dout_reg[8]/CLR,
+design_1_i/hdmi_tx_0/inst/encr/dout_reg[9]/CLR
+ (the first 15 of 42 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/microblaze_riscv_0/U0/riscv_core_I/Base.Core/Decode_I/Use_MuxCy[4].OF_Piperun_Stage/MUXCY_I/Serial_Dbg_Intf.abstractcs_busy_rst_i_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/microblaze_riscv_0/U0/riscv_core_I/Base.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Serial_Dbg_Intf.abstractcs_busy_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/microblaze_riscv_0/U0/riscv_core_I/Base.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Serial_Dbg_Intf.resume_rst_i_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/microblaze_riscv_0/U0/riscv_core_I/Base.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Serial_Dbg_Intf.resumeack_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_iodelay_ctrl/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__7/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__8/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__9/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[0]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[10]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[11]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[1]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[2]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[3]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[4]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[5]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[6]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[7]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[8]/PRE,
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_infrastructure/rstdiv0_sync_r_reg[9]/PRE
+ (the first 15 of 35 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -2.007 ns between design_1_i/VGA_0/inst/hsync_2_reg_srl2_srlopt/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[3].srl16_i/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -2.025 ns between design_1_i/VGA_0/inst/vsync_2_reg_srl2_srlopt/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[2].srl16_i_srlopt/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -2.053 ns between design_1_i/VGA_0/inst/temp_pix_reg[2]/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[38].srl16_i_srlopt/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -2.076 ns between design_1_i/VGA_0/inst/temp_pix_reg[2]/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[30].srl16_i_srlopt/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -2.162 ns between design_1_i/VGA_0/inst/temp_pix_reg[2]/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[23].srl16_i/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -2.275 ns between design_1_i/VGA_0/inst/temp_pix_reg[2]/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[21].srl16_i/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -2.297 ns between design_1_i/VGA_0/inst/temp_pix_reg[2]/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[37].srl16_i/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -2.316 ns between design_1_i/VGA_0/inst/vhsync/hs_reg/C (clocked by clk_25MHz_design_1_clk_wiz_0_0) and design_1_i/VGA_0/inst/hsync_2_reg_srl2/D (clocked by clk_125MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -2.328 ns between design_1_i/VGA_0/inst/vhsync/vs_reg/C (clocked by clk_25MHz_design_1_clk_wiz_0_0) and design_1_i/VGA_0/inst/vsync_2_reg_srl2/D (clocked by clk_125MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -2.336 ns between design_1_i/VGA_0/inst/temp_pix_reg[2]/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[39].srl16_i_srlopt/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -2.341 ns between design_1_i/VGA_0/inst/vde_2_reg/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[1].srl16_i/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -2.344 ns between design_1_i/VGA_0/inst/temp_pix_reg[2]/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[31].srl16_i_srlopt/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -2.367 ns between design_1_i/VGA_0/inst/temp_pix_reg[2]/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[22].srl16_i_srlopt/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -2.390 ns between design_1_i/VGA_0/inst/vde_2_reg/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/encg/c0_q_reg_srl2/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -2.436 ns between design_1_i/VGA_0/inst/temp_pix_reg[2]/C (clocked by clk_125MHz_design_1_clk_wiz_0_0) and design_1_i/hdmi_tx_0/inst/srldly_0/srl[29].srl16_i/D (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -2.828 ns between design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[6]/C (clocked by clk_25MHz_design_1_clk_wiz_0_0) and design_1_i/VGA_0/inst/vde_1_reg/D (clocked by clk_125MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -4.689 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[0]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -4.831 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica_1/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/WEA[0] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -4.840 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[7]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -4.840 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[8]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -4.840 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[9]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -4.890 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[1]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -4.895 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[2]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -4.895 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[3]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -4.895 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[4]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -4.895 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[5]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -4.895 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/vs_count/count_reg[6]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -4.897 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg0_reg[1]/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/DIADI[1] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -4.902 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg0_reg[3]/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/DIADI[3] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -4.905 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg0_reg[2]/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/DIADI[2] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -4.913 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg0_reg[0]/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/DIADI[0] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -5.024 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg0_reg[4]/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/DIADI[4] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -5.025 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg0_reg[6]/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/DIADI[6] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -5.224 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg0_reg[5]/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/DIADI[5] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -5.243 ns between design_1_i/VGA_0/inst/fb/rom/BRAM_SINGLE_MACRO_inst/genblk3_0.bram36_single_bl.bram36_single_bl/CLKARDCLK (clocked by clk_25MHz_design_1_clk_wiz_0_0) and design_1_i/VGA_0/inst/temp_pix_reg[2]/D (clocked by clk_125MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -5.271 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/hs_count/count_reg[5]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -5.271 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/hs_count/count_reg[6]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -5.276 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/hs_count/count_reg[9]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -5.357 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/hs_count/count_reg[0]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -5.357 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/hs_count/count_reg[1]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -5.357 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/hs_count/count_reg[2]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -5.357 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/hs_count/count_reg[3]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -5.357 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/hs_count/count_reg[4]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -5.357 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/hs_count/count_reg[7]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -5.357 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/vhsync/hs_count/count_reg[8]/R (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -5.485 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[3] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -5.596 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[5] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -5.610 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[7] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -5.613 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[10] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -5.615 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[9] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -5.646 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[4] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -5.655 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[12] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -5.738 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[8] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#54 Warning
+Large setup violation  
+There is a large setup violation of -5.759 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[6] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#55 Warning
+Large setup violation  
+There is a large setup violation of -5.767 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[11] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#56 Warning
+Large setup violation  
+There is a large setup violation of -5.845 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/hdmi_tx_0/inst/serial_clk/oserdes_s/RST (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#57 Warning
+Large setup violation  
+There is a large setup violation of -5.847 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/hdmi_tx_0/inst/serial_b/oserdes_m/RST (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#58 Warning
+Large setup violation  
+There is a large setup violation of -5.854 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/hdmi_tx_0/inst/serial_g/oserdes_m/RST (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#59 Warning
+Large setup violation  
+There is a large setup violation of -5.882 ns between design_1_i/axi_vga_test_0/inst/axi_vga_test_slave_lite_v1_0_S00_AXI_inst/slv_reg2_reg[0]_replica/C (clocked by clk_pll_i) and design_1_i/VGA_0/inst/fb/tr/ram_reg/ADDRARDADDR[13] (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#60 Warning
+Large setup violation  
+There is a large setup violation of -5.954 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/hdmi_tx_0/inst/serial_r/oserdes_m/RST (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#61 Warning
+Large setup violation  
+There is a large setup violation of -5.974 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/hdmi_tx_0/inst/serial_clk/oserdes_m/RST (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#62 Warning
+Large setup violation  
+There is a large setup violation of -5.987 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/hdmi_tx_0/inst/serial_g/oserdes_s/RST (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#63 Warning
+Large setup violation  
+There is a large setup violation of -5.995 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/hdmi_tx_0/inst/serial_r/oserdes_s/RST (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#64 Warning
+Large setup violation  
+There is a large setup violation of -5.998 ns between design_1_i/rst_mig_7series_0_197M/U0/PR_OUT_DFF[0].FDRE_PER/C (clocked by clk_pll_i) and design_1_i/hdmi_tx_0/inst/serial_b/oserdes_s/RST (clocked by clk_25MHz_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+ULMTCS-1#1 Warning
+Control Sets use limits recommend reduction  
+This design uses 707 control sets (vs. available limit of 8150, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '8' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Xilinx/Vivado/EE415/projectTest3/projectTest3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc (Line: 365)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+

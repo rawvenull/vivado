@@ -1,0 +1,21 @@
+axi_timer_0:
+- axi_timer
+- tmrctr
+axi_uartlite_0:
+- axi_uartlite
+- uartlite
+axi_vga_0:
+- axi_vga
+- None
+btn:
+- axi_gpio
+- gpio
+led:
+- axi_gpio
+- gpio
+microblaze_riscv_0_axi_intc:
+- axi_intc
+- intc
+sw:
+- axi_gpio
+- gpio
