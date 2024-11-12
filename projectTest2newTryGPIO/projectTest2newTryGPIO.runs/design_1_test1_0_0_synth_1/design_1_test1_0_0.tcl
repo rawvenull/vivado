@@ -76,7 +76,7 @@ set_property ip_output_repo c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projec
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.srcs/sources_1/bd/design_1/ip/design_1_test1_0_0/design_1_test1_0_0.xci
+read_ip -quiet C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.srcs/sources_1/bd/design_1/ip/design_1_test1_0_0/design_1_test1_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -88,11 +88,47 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+OPTRACE "Configure IP Cache" START { }
+
+set cacheID [config_ip_cache -export -no_bom  -dir C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_test1_0_0_synth_1 -new_name design_1_test1_0_0 -ip [get_ips design_1_test1_0_0]]
+
+OPTRACE "Configure IP Cache" END { }
+if { $cacheID == "" } {
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
 synth_design -top design_1_test1_0_0 -part xc7s50csga324-1 -incremental_mode off -mode out_of_context
 OPTRACE "synth_design" END { }
+OPTRACE "Write IP Cache" START { }
+
+#---------------------------------------------------------
+# Generate Checkpoint/Stub/Simulation Files For IP Cache
+#---------------------------------------------------------
+# disable binary constraint mode for IPCache checkpoints
+set_param constraints.enableBinaryConstraints false
+
+catch {
+ write_checkpoint -force -noxdef -rename_prefix design_1_test1_0_0_ design_1_test1_0_0.dcp
+
+ set ipCachedFiles {}
+ write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_test1_0_0_stub.v
+ lappend ipCachedFiles design_1_test1_0_0_stub.v
+
+ write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_test1_0_0_stub.vhdl
+ lappend ipCachedFiles design_1_test1_0_0_stub.vhdl
+
+ write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_test1_0_0_sim_netlist.v
+ lappend ipCachedFiles design_1_test1_0_0_sim_netlist.v
+
+ write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_test1_0_0_sim_netlist.vhdl
+ lappend ipCachedFiles design_1_test1_0_0_sim_netlist.vhdl
+ set TIME_taken [expr [clock seconds] - $TIME_start]
+
+ if { [get_msg_config -count -severity {CRITICAL WARNING}] == 0 } {
+  config_ip_cache -add -dcp design_1_test1_0_0.dcp -move_files $ipCachedFiles   -synth_runtime $TIME_taken  -ip [get_ips design_1_test1_0_0]
+ }
+OPTRACE "Write IP Cache" END { }
+}
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
 }
@@ -138,6 +174,44 @@ if { [catch {
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
+
+
+} else {
+
+
+if { [catch {
+  file copy -force C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_test1_0_0_synth_1/design_1_test1_0_0.dcp c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_test1_0_0/design_1_test1_0_0.dcp
+} _RESULT ] } { 
+  send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
+  error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
+}
+
+if { [catch {
+  file rename -force C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_test1_0_0_synth_1/design_1_test1_0_0_stub.v c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_test1_0_0/design_1_test1_0_0_stub.v
+} _RESULT ] } { 
+  puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+}
+
+if { [catch {
+  file rename -force C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_test1_0_0_synth_1/design_1_test1_0_0_stub.vhdl c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_test1_0_0/design_1_test1_0_0_stub.vhdl
+} _RESULT ] } { 
+  puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+}
+
+if { [catch {
+  file rename -force C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_test1_0_0_synth_1/design_1_test1_0_0_sim_netlist.v c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_test1_0_0/design_1_test1_0_0_sim_netlist.v
+} _RESULT ] } { 
+  puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+}
+
+if { [catch {
+  file rename -force C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_test1_0_0_synth_1/design_1_test1_0_0_sim_netlist.vhdl c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_test1_0_0/design_1_test1_0_0_sim_netlist.vhdl
+} _RESULT ] } { 
+  puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+}
+
+close [open .end.used_ip_cache.rst w]
+}; # end if cacheID 
 
 if {[file isdir C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.ip_user_files/ip/design_1_test1_0_0]} {
   catch { 

@@ -1,0 +1,12 @@
+axiCustom_0:
+- axiCustom
+- None
+axi_timer_0:
+- axi_timer
+- tmrctr
+axi_uartlite_0:
+- axi_uartlite
+- uartlite
+microblaze_riscv_0_axi_intc:
+- axi_intc
+- intc

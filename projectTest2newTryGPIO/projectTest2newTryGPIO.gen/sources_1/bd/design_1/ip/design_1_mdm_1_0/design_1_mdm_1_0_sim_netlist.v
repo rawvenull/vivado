@@ -1,8 +1,8 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-// Date        : Wed Oct 30 14:42:01 2024
+// Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+// Date        : Mon Nov 11 10:02:05 2024
 // Host        : Marlofst running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_sim_netlist.v
@@ -13,7 +13,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_mdm_1_0,mdm_riscv,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "mdm_riscv,Vivado 2024.1.2" *) 
+(* CHECK_LICENSE_TYPE = "design_1_mdm_1_0,mdm_riscv,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "mdm_riscv,Vivado 2024.1" *) 
 (* NotValidForBitStream *)
 module design_1_mdm_1_0
    (Debug_SYS_Rst,

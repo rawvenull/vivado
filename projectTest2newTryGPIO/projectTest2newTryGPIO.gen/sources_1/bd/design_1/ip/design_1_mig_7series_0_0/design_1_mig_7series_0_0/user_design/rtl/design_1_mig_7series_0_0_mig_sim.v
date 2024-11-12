@@ -590,7 +590,7 @@ module design_1_mig_7series_0_0_mig #
                                      // # = "L", "N". When FPGA VccINT is 0.9v,
                                      // the value is "L", else it is "N"
       
-   parameter RST_ACT_LOW           = 1
+   parameter RST_ACT_LOW           = 0
                                      // =1 for active low reset,
                                      // =0 for active high.
    )

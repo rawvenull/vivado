@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "design_1_axi_gpio_1_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -70,6 +71,8 @@ set_property parent.project_path C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/p
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths c:/Xilinx/Vivado/EE415/ip_repo/test1_1_0 [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }

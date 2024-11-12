@@ -1,10 +1,10 @@
 #-----------------------------------------------------------
-# Vivado v2024.1.2 (64-bit)
-# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
-# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
-# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-# Start of session at: Sat Nov  2 15:03:42 2024
-# Process ID: 59176
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Nov 11 10:28:15 2024
+# Process ID: 30888
 # Current directory: C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_microblaze_riscv_0_0_synth_1
 # Command line: vivado.exe -log design_1_microblaze_riscv_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_microblaze_riscv_0_0.tcl
 # Log file: C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_microblaze_riscv_0_0_synth_1/design_1_microblaze_riscv_0_0.vds
@@ -17,12 +17,12 @@
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :16542 MB
-# Swap memory       :36507 MB
-# Total Virtual     :53049 MB
-# Available Virtual :17001 MB
+# Swap memory       :24696 MB
+# Total Virtual     :41238 MB
+# Available Virtual :10031 MB
 #-----------------------------------------------------------
 source design_1_microblaze_riscv_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 636.125 ; gain = 201.680
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 628.109 ; gain = 199.285
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Vivado/EE415/ip_repo/test1_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
@@ -35,11 +35,11 @@ INFO: [Device 21-403] Loading part xc7s50csga324-1
 INFO: [Device 21-9227] Part: xc7s50csga324-1 does not have CEAM library.
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 63432
+INFO: [Synth 8-7075] Helper process launched with PID 36528
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1499.043 ; gain = 447.379
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1488.105 ; gain = 446.727
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_riscv_0_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_0/synth/design_1_microblaze_riscv_0_0.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_riscv_0_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_0/synth/design_1_microblaze_riscv_0_0.vhd:134]
 	Parameter C_FREQ bound to: 83333333 - type: integer 
 	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
 	Parameter C_NUM_SYNC_FF_CLK bound to: 2 - type: integer 
@@ -177,7 +177,7 @@ INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_riscv_0_0' [c:/Xili
 	Parameter C_M_AXI_IC_BUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_DCACHE_BASEADDR bound to: 64'b0000000000000000000000000000000001000100101000000000000000000000 
 	Parameter C_DCACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000001000100101000001111111111111111 
-	Parameter C_USE_DCACHE bound to: 1 - type: integer 
+	Parameter C_USE_DCACHE bound to: 0 - type: integer 
 	Parameter C_DCACHE_BYTE_SIZE bound to: 4096 - type: integer 
 	Parameter C_DCACHE_LINE_LEN bound to: 4 - type: integer 
 	Parameter C_DCACHE_USE_WRITEBACK bound to: 0 - type: integer 
@@ -194,8 +194,8 @@ INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_riscv_0_0' [c:/Xili
 	Parameter C_M_AXI_DC_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_DC_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'riscv' declared at 'c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ipshared/1a4c/hdl/microblaze_riscv_v1_0_vh_rfs.vhd:118053' bound to instance 'U0' of component 'riscv' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_0/synth/design_1_microblaze_riscv_0_0.vhd:916]
-INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_riscv_0_0' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_0/synth/design_1_microblaze_riscv_0_0.vhd:171]
+INFO: [Synth 8-3491] module 'riscv' declared at 'c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ipshared/1a4c/hdl/microblaze_riscv_v1_0_vh_rfs.vhd:118053' bound to instance 'U0' of component 'riscv' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_0/synth/design_1_microblaze_riscv_0_0.vhd:840]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_riscv_0_0' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_0/synth/design_1_microblaze_riscv_0_0.vhd:134]
 WARNING: [Synth 8-7129] Port Clk in module pmp_checker is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Reset in module pmp_checker is either unconnected or has no load
 WARNING: [Synth 8-7129] Port EX_Sel_CSR[fflags] in module pmp_checker is either unconnected or has no load
@@ -298,19 +298,19 @@ WARNING: [Synth 8-7129] Port EX_ALU_Result[2] in module pmp_checker is either un
 WARNING: [Synth 8-7129] Port EX_ALU_Result[1] in module pmp_checker is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1920.633 ; gain = 868.969
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1897.648 ; gain = 856.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1920.633 ; gain = 868.969
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1897.648 ; gain = 856.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1920.633 ; gain = 868.969
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1897.648 ; gain = 856.270
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.445 . Memory (MB): peak = 1920.633 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 700 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.360 . Memory (MB): peak = 1897.648 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 652 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -328,35 +328,34 @@ Parsing XDC File [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newT
 Finished Parsing XDC File [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_microblaze_riscv_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1965.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1927.383 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 468 instances were transformed.
+  A total of 422 instances were transformed.
   FDE => FDRE: 32 instances
   FDR => FDRE: 37 instances
   FDS => FDSE: 1 instance 
   LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
-  MUXCY_L => MUXCY: 270 instances
+  MUXCY_L => MUXCY: 256 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
-  RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1966.746 ; gain = 1.070
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1929.219 ; gain = 1.836
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_microblaze_riscv_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'cache_state_reg' in module 'microblaze_riscv_v1_0_2_Icache'
 ---------------------------------------------------------------------------------------------------
@@ -370,7 +369,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'cache_state_reg' in module 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'cache_state_reg' using encoding 'sequential' in module 'microblaze_riscv_v1_0_2_Icache'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -382,15 +381,13 @@ Detailed RTL Component Info :
 	   2 Input   32 Bit       Adders := 1     
 	   2 Input   14 Bit       Adders := 1     
 	   2 Input   10 Bit       Adders := 1     
-	   2 Input    9 Bit       Adders := 1     
 	   2 Input    7 Bit       Adders := 1     
 	   2 Input    6 Bit       Adders := 1     
-	   2 Input    5 Bit       Adders := 1     
-	   2 Input    4 Bit       Adders := 8     
-	   2 Input    2 Bit       Adders := 9     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 3     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
-	   2 Input      1 Bit         XORs := 121   
+	   2 Input      1 Bit         XORs := 109   
 	   3 Input      1 Bit         XORs := 1     
 +---Registers : 
 	             4096 Bit    Registers := 1     
@@ -398,7 +395,7 @@ Detailed RTL Component Info :
 	               42 Bit    Registers := 1     
 	               34 Bit    Registers := 1     
 	               33 Bit    Registers := 1     
-	               32 Bit    Registers := 41    
+	               32 Bit    Registers := 36    
 	               31 Bit    Registers := 1     
 	               29 Bit    Registers := 1     
 	               23 Bit    Registers := 1     
@@ -407,50 +404,49 @@ Detailed RTL Component Info :
 	               14 Bit    Registers := 1     
 	               12 Bit    Registers := 1     
 	               10 Bit    Registers := 1     
-	                9 Bit    Registers := 2     
-	                8 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                7 Bit    Registers := 3     
 	                6 Bit    Registers := 2     
-	                5 Bit    Registers := 7     
-	                4 Bit    Registers := 17    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 7     
-	                2 Bit    Registers := 43    
-	                1 Bit    Registers := 403   
+	                2 Bit    Registers := 35    
+	                1 Bit    Registers := 341   
 +---Muxes : 
 	   2 Input   64 Bit        Muxes := 9     
 	   2 Input   34 Bit        Muxes := 1     
 	   2 Input   33 Bit        Muxes := 9     
-	   2 Input   32 Bit        Muxes := 46    
+	   2 Input   32 Bit        Muxes := 41    
 	   3 Input   32 Bit        Muxes := 1     
 	   4 Input   32 Bit        Muxes := 3     
 	   2 Input   18 Bit        Muxes := 2     
 	   2 Input   16 Bit        Muxes := 1     
 	   2 Input   14 Bit        Muxes := 1     
 	   2 Input   12 Bit        Muxes := 3     
-	   2 Input   10 Bit        Muxes := 4     
-	   3 Input    9 Bit        Muxes := 1     
-	   2 Input    9 Bit        Muxes := 6     
-	   2 Input    8 Bit        Muxes := 7     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 3     
 	   2 Input    7 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 4     
-	   2 Input    5 Bit        Muxes := 14    
+	   2 Input    5 Bit        Muxes := 13    
 	   3 Input    5 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 9     
+	   2 Input    4 Bit        Muxes := 4     
 	   7 Input    4 Bit        Muxes := 1     
 	   3 Input    3 Bit        Muxes := 1     
 	   5 Input    3 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 15    
 	   6 Input    3 Bit        Muxes := 1     
 	   4 Input    3 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 43    
+	   2 Input    2 Bit        Muxes := 34    
 	   4 Input    2 Bit        Muxes := 2     
-	   3 Input    2 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 390   
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 353   
 	   5 Input    1 Bit        Muxes := 8     
 	   7 Input    1 Bit        Muxes := 4     
 	   3 Input    1 Bit        Muxes := 1     
-	   4 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 2     
 	   6 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -477,7 +473,7 @@ INFO: [Synth 8-3332] Sequential element (riscv_core_I/Base.Core/Decode_I/Using_F
 INFO: [Synth 8-3332] Sequential element (riscv_core_I/Base.Core/Decode_I/Using_FPGA_2.ex_is_sc_instr_Inst/Using_FPGA.Native) is unused and will be removed from module riscv.
 INFO: [Synth 8-3332] Sequential element (riscv_core_I/Base.Core/Decode_I/Using_FPGA_2.ex_is_amo_instr_Inst/Using_FPGA.Native) is unused and will be removed from module riscv.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:08 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:02 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -502,19 +498,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:17 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:10 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:23 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:15 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:25 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:17 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -564,55 +560,51 @@ INFO: [Synth 8-3295] tying undriven pin riscv_core_I/Base.Core/Data_Flow_I/Opera
 INFO: [Synth 8-3295] tying undriven pin riscv_core_I/Base.Core/Data_Flow_I/Operand_Select_I/of_op2_tmp_inferred:in0[1] to constant 0
 INFO: [Synth 8-3295] tying undriven pin riscv_core_I/Base.Core/Data_Flow_I/Operand_Select_I/of_op2_tmp_inferred:in0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:30 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:21 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:30 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:01:22 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:31 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:01:22 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:31 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:22 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:31 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:22 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:31 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:22 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Dynamic Shift Register Report:
-+------------+-----------------------------------------------+--------+------------+--------+---------+--------+--------+--------+
-|Module Name | RTL Name                                      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
-+------------+-----------------------------------------------+--------+------------+--------+---------+--------+--------+--------+
-|dsrl        | PC_Buffer_reg[3]                              | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
-|dsrl__1     | data_buffer_reg[3]                            | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
-|dsrl__2     | Using_AXI.Use_AXI_Write.aw_w_fifo_mem_reg[15] | 10     | 10         | 10     | 0       | 0      | 0      | 0      | 
-|dsrl__3     | Using_AXI.r_fifo_mem_reg[15]                  | 10     | 10         | 10     | 0       | 0      | 0      | 0      | 
-|dsrl__4     | Using_AXI.Use_AXI_Write.aw_fifo_mem_reg[15]   | 37     | 37         | 37     | 0       | 0      | 0      | 0      | 
-|dsrl__5     | Using_AXI.Use_AXI_Write.w_fifo_mem_reg[15]    | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
-|dsrl__6     | Using_AXI.r_fifo_mem_reg[15]                  | 10     | 10         | 10     | 0       | 0      | 0      | 0      | 
-|dsrl__7     | data_buffer_reg[2]                            | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
-+------------+-----------------------------------------------+--------+------------+--------+---------+--------+--------+--------+
++------------+------------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                     | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+------------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | PC_Buffer_reg[3]             | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | data_buffer_reg[3]           | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | Using_AXI.r_fifo_mem_reg[15] | 10     | 10         | 10     | 0       | 0      | 0      | 0      | 
+|dsrl__3     | data_buffer_reg[2]           | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
++------------+------------------------------+--------+------------+--------+---------+--------+--------+--------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -626,7 +618,7 @@ DSP Final Report (the ' indicates corresponding REG is set)
 |Module Name                    | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +-------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |MB_DSP48E1                     | (A*B)'             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
-|MB_DSP48E1__parameterized1_762 | PCIN>>17+(A*B)'    | 30     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|MB_DSP48E1__parameterized1_633 | PCIN>>17+(A*B)'    | 30     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 1    | 0    | 
 |MB_DSP48E1__parameterized1     | PCIN+(A*B)'        | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 1    | 0    | 
 |MB_DSP48E1__parameterized3     | (PCIN>>17+(A*B)')' | 30     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 1    | 1    | 
 +-------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
@@ -642,64 +634,62 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |AND2B1L  |     3|
+|1     |AND2B1L  |     1|
 |2     |CARRY4   |    53|
 |3     |DSP48E1  |     4|
-|6     |LUT1     |    78|
-|7     |LUT2     |   244|
-|8     |LUT3     |   524|
-|9     |LUT4     |   488|
-|10    |LUT5     |   315|
-|11    |LUT6     |  1199|
-|13    |MUXCY_L  |   258|
-|14    |MUXF7    |    34|
+|6     |LUT1     |    72|
+|7     |LUT2     |   226|
+|8     |LUT3     |   443|
+|9     |LUT4     |   446|
+|10    |LUT5     |   302|
+|11    |LUT6     |  1070|
+|13    |MUXCY_L  |   244|
+|14    |MUXF7    |    33|
 |15    |MUXF8    |     1|
 |16    |RAM32M   |    16|
-|17    |RAM32X1D |    32|
-|18    |RAMB36E1 |     5|
-|20    |SRL16E   |   131|
-|21    |XORCY    |   186|
-|22    |FDCE     |    10|
-|23    |FDE      |    32|
-|24    |FDPE     |     1|
-|25    |FDR      |    32|
-|26    |FDRE     |  1400|
-|27    |FDS      |     1|
-|28    |FDSE     |    59|
+|17    |RAMB36E1 |     3|
+|19    |SRL16E   |    59|
+|20    |XORCY    |   186|
+|21    |FDCE     |    10|
+|22    |FDE      |    32|
+|23    |FDPE     |     1|
+|24    |FDR      |    32|
+|25    |FDRE     |  1218|
+|26    |FDS      |     1|
+|27    |FDSE     |    38|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:31 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:22 . Memory (MB): peak = 1929.219 ; gain = 887.840
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 11684 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:25 . Memory (MB): peak = 1966.746 ; gain = 868.969
-Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:31 . Memory (MB): peak = 1966.746 ; gain = 915.082
+Synthesis finished with 0 errors, 0 critical warnings and 11021 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:01:17 . Memory (MB): peak = 1929.219 ; gain = 856.270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:23 . Memory (MB): peak = 1929.219 ; gain = 887.840
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 1966.746 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 734 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 1929.219 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 685 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1966.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1929.219 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 260 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 67 instances
+  A total of 225 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 64 instances
   FDE => FDRE: 32 instances
   FDR => FDRE: 32 instances
   FDS => FDSE: 1 instance 
   LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
-  RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
 
-Synth Design complete | Checksum: febdd7c
+Synth Design complete | Checksum: 3a58f22c
 INFO: [Common 17-83] Releasing license: Synthesis
 69 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:44 . Memory (MB): peak = 1966.746 ; gain = 1314.949
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1966.746 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:30 . Memory (MB): peak = 1929.219 ; gain = 1285.965
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1929.219 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_microblaze_riscv_0_0_synth_1/design_1_microblaze_riscv_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_microblaze_riscv_0_0, cache-ID = d569c2889fe82f89
-INFO: [Coretcl 2-1174] Renamed 1105 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1966.746 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_microblaze_riscv_0_0, cache-ID = afe86cd3f88863b6
+INFO: [Coretcl 2-1174] Renamed 965 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1929.219 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/design_1_microblaze_riscv_0_0_synth_1/design_1_microblaze_riscv_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_microblaze_riscv_0_0_utilization_synth.rpt -pb design_1_microblaze_riscv_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 15:05:45 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 10:30:02 2024...

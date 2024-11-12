@@ -155,8 +155,8 @@ set_property -dict {PACKAGE_PIN E13 IOSTANDARD LVCMOS33} [get_ports {BLE_UART_RX
 set_property -dict {PACKAGE_PIN H15 IOSTANDARD LVCMOS33} [get_ports {BLE_UART_RTS}];
 set_property -dict {PACKAGE_PIN F13 IOSTANDARD LVCMOS33} [get_ports {BLE_UART_CTS}];
 ## Switched B16 and A16, B16 used to be on top
-set_property -dict {PACKAGE_PIN A16 IOSTANDARD LVCMOS33} [get_ports {UART_TXD}];
-set_property -dict {PACKAGE_PIN B16 IOSTANDARD LVCMOS33} [get_ports {UART_RXD}];
+set_property -dict {PACKAGE_PIN A16 IOSTANDARD LVCMOS33} [get_ports {UART_txd}];
+set_property -dict {PACKAGE_PIN B16 IOSTANDARD LVCMOS33} [get_ports {UART_rxd}];
 ##
 
 #QSPI signals
@@ -479,7 +479,7 @@ set_property IOSTANDARD DIFF_SSTL135 [get_ports {DDR3_ck_n[0]}];
 set_property PACKAGE_PIN T4 [get_ports {DDR3_ck_n[0]}];
 
 set_property INTERNAL_VREF 0.675 [get_iobanks 34];
-#set_property CFGBS VCCO;
+set_property CFGBS VCCO;
 
 set_property BITSTREAM.CONFIG.UNUSEDPIN PULLUP [current_design];
 set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design];

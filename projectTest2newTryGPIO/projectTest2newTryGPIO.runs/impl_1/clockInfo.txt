@@ -1,6 +1,6 @@
 -------------------------------------
-| Tool Version : Vivado v.2024.1.2
-| Date         : Sat Nov  2 15:08:23 2024
+| Tool Version : Vivado v.2024.1
+| Date         : Mon Nov 11 10:32:32 2024
 | Host         : Marlofst
 | Design       : design_1
 | Device       : xc7s50-csga324-1--

@@ -1,0 +1,30 @@
+axi_gpio_Anodes:
+- axi_gpio
+- gpio
+axi_gpio_Cathodes:
+- axi_gpio
+- gpio
+axi_gpio_btn:
+- axi_gpio
+- gpio
+axi_gpio_rgb0:
+- axi_gpio
+- gpio
+axi_gpio_rgb1:
+- axi_gpio
+- gpio
+axi_gpio_sw:
+- axi_gpio
+- gpio
+axi_timer_0:
+- axi_timer
+- tmrctr
+axi_uartlite_0:
+- axi_uartlite
+- uartlite
+microblaze_riscv_0_axi_intc:
+- axi_intc
+- intc
+test1_0:
+- test1
+- None

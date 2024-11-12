@@ -4,16 +4,16 @@
 
 
 
-****** Vivado v2024.1.2 (64-bit)
-  **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
-  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
-  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Sat Nov  2 15:06:16 2024
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Nov 11 10:30:42 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 635.781 ; gain = 199.336
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 629.996 ; gain = 201.195
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/Vivado/EE415/ip_repo/test1_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
@@ -30,155 +30,134 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11400
+INFO: [Synth 8-7075] Helper process launched with PID 35440
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1543.934 ; gain = 448.219
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1529.680 ; gain = 448.555
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_3' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_3' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_0_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_4' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_0_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_4' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_0_4_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_2' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_2' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_1' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_1' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_1' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_1_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_1' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_1_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_timer_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_timer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_timer_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_timer_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'generateout0' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:616]
-WARNING: [Synth 8-7071] port 'generateout1' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:616]
-WARNING: [Synth 8-7071] port 'pwm0' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:616]
-WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'design_1_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:616]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_riscv_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_microblaze_riscv_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_riscv_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_microblaze_riscv_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_riscv_0_axi_intc_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_microblaze_riscv_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_riscv_0_axi_intc_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_microblaze_riscv_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_riscv_0_axi_periph_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1257]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_XH10JP' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4229]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4468]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4468]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 60 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4468]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_XH10JP' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4229]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_165PIW4' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4529]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_165PIW4' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4529]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_YT9NRA' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4801]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5040]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5040]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_1' has 60 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5040]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_YT9NRA' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4801]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_14JT5D3' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5101]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5340]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5340]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 60 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5340]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_14JT5D3' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5101]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_VX58UB' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5401]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_3_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5640]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5640]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_3' has 60 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5640]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_VX58UB' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5401]
-INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_17DQZMQ' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5701]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_4' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_4' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_4_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5940]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5940]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_4' has 60 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5940]
-INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_17DQZMQ' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:5701]
-INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_WZDLS0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6001]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_5' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_5_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_5' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_5_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6240]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6240]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_5' has 60 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6240]
-INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_WZDLS0' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6001]
-INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_16LSNS1' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6301]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_6' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_6_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_6' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_6_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_6' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6540]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_6' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6540]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_6' has 60 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6540]
-INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_16LSNS1' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6301]
-INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_V2718P' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6601]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_7' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_7_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_7' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_7_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_7' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6840]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_7' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6840]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_7' has 60 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6840]
-INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_V2718P' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6601]
-INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_ZOTLNS' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6901]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_8' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_8_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_8' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_8_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_8' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7140]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_8' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7140]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_8' has 60 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7140]
-INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_ZOTLNS' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:6901]
-INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_1CMKBQ5' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7201]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_9' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_9_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_9' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_9_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_9' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7440]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_9' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7440]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_9' has 60 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7440]
-INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_1CMKBQ5' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7201]
-INFO: [Synth 8-6157] synthesizing module 'm11_couplers_imp_HS1PRW' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7501]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_10' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_10_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_10' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_10_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm11_couplers_imp_HS1PRW' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7501]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_ZYORBB' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7811]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_11' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_11_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_11' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_auto_pc_11_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_11' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:8034]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_11' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:8034]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_11' has 56 connections declared, but only 54 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:8034]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_ZYORBB' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:7811]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_UQVAG6' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:8091]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_UQVAG6' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:8091]
-INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_10PCZ44' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:8363]
-INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_10PCZ44' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:8363]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_riscv_0_axi_periph_0' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1257]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_3' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_3' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_4' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_0_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_4' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_0_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_2' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_2' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_1' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_1' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_timer_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_timer_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_timer_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:515]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:515]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:515]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'design_1_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:515]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_riscv_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_microblaze_riscv_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_riscv_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_microblaze_riscv_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWID' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWADDR' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWLEN' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWSIZE' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWBURST' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWLOCK' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWCACHE' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWPROT' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWQOS' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_AWVALID' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_WDATA' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_WSTRB' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_WLAST' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_WVALID' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_BREADY' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7071] port 'M_AXI_IC_ARID' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+WARNING: [Synth 8-7023] instance 'microblaze_riscv_0' of module 'design_1_microblaze_riscv_0_0' has 70 connections declared, but only 54 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:573]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_riscv_0_axi_intc_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_microblaze_riscv_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_riscv_0_axi_intc_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_microblaze_riscv_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_riscv_0_axi_periph_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1028]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_XH10JP' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:2960]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_XH10JP' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:2960]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_165PIW4' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3092]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3315]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3315]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 56 connections declared, but only 54 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3315]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_165PIW4' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3092]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_YT9NRA' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3372]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_YT9NRA' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3372]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_14JT5D3' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3504]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_14JT5D3' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3504]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_VX58UB' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3636]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_VX58UB' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3636]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_17DQZMQ' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3768]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_17DQZMQ' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3768]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_WZDLS0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3900]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_WZDLS0' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:3900]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_16LSNS1' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4032]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_16LSNS1' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4032]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_V2718P' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4164]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_V2718P' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4164]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_ZOTLNS' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4296]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_ZOTLNS' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4296]
+INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_1CMKBQ5' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4428]
+INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_1CMKBQ5' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4428]
+INFO: [Synth 8-6157] synthesizing module 'm11_couplers_imp_HS1PRW' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4560]
+INFO: [Synth 8-6155] done synthesizing module 'm11_couplers_imp_HS1PRW' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4560]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_ZYORBB' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4706]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_ZYORBB' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4706]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_UQVAG6' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4852]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_UQVAG6' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:4852]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_awready' does not match port width (2) of module 'design_1_xbar_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:2945]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_bresp' does not match port width (4) of module 'design_1_xbar_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:2948]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_bvalid' does not match port width (2) of module 'design_1_xbar_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:2949]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_wready' does not match port width (2) of module 'design_1_xbar_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:2955]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_riscv_0_axi_periph_0' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1028]
+WARNING: [Synth 8-7071] port 'M04_AXI_araddr' of module 'design_1_microblaze_riscv_0_axi_periph_0' is unconnected for instance 'microblaze_riscv_0_axi_periph' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:654]
+WARNING: [Synth 8-7071] port 'M04_AXI_arvalid' of module 'design_1_microblaze_riscv_0_axi_periph_0' is unconnected for instance 'microblaze_riscv_0_axi_periph' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:654]
+WARNING: [Synth 8-7071] port 'M04_AXI_awaddr' of module 'design_1_microblaze_riscv_0_axi_periph_0' is unconnected for instance 'microblaze_riscv_0_axi_periph' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:654]
+WARNING: [Synth 8-7071] port 'M04_AXI_awvalid' of module 'design_1_microblaze_riscv_0_axi_periph_0' is unconnected for instance 'microblaze_riscv_0_axi_periph' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:654]
+WARNING: [Synth 8-7071] port 'M04_AXI_bready' of module 'design_1_microblaze_riscv_0_axi_periph_0' is unconnected for instance 'microblaze_riscv_0_axi_periph' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:654]
+WARNING: [Synth 8-7071] port 'M04_AXI_rready' of module 'design_1_microblaze_riscv_0_axi_periph_0' is unconnected for instance 'microblaze_riscv_0_axi_periph' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:654]
+WARNING: [Synth 8-7071] port 'M04_AXI_wdata' of module 'design_1_microblaze_riscv_0_axi_periph_0' is unconnected for instance 'microblaze_riscv_0_axi_periph' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:654]
+WARNING: [Synth 8-7071] port 'M04_AXI_wstrb' of module 'design_1_microblaze_riscv_0_axi_periph_0' is unconnected for instance 'microblaze_riscv_0_axi_periph' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:654]
+WARNING: [Synth 8-7071] port 'M04_AXI_wvalid' of module 'design_1_microblaze_riscv_0_axi_periph_0' is unconnected for instance 'microblaze_riscv_0_axi_periph' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:654]
+WARNING: [Synth 8-7023] instance 'microblaze_riscv_0_axi_periph' of module 'design_1_microblaze_riscv_0_axi_periph_0' has 286 connections declared, but only 277 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:654]
 INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_riscv_0_xlconcat_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_xlconcat_0/synth/design_1_microblaze_riscv_0_xlconcat_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_6_xlconcat' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_6_xlconcat' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_riscv_0_xlconcat_0' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_xlconcat_0/synth/design_1_microblaze_riscv_0_xlconcat_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mig_7series_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_mig_7series_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mig_7series_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_mig_7series_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'ui_addn_clk_1' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-WARNING: [Synth 8-7071] port 'ui_addn_clk_2' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-WARNING: [Synth 8-7071] port 'ui_addn_clk_3' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-WARNING: [Synth 8-7071] port 'ui_addn_clk_4' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-WARNING: [Synth 8-7071] port 'app_sr_active' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-WARNING: [Synth 8-7071] port 'init_calib_complete' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-WARNING: [Synth 8-7071] port 'device_temp' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'design_1_mig_7series_0_0' has 69 connections declared, but only 60 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1164]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_mig_7series_0_197M_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_rst_mig_7series_0_197M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_mig_7series_0_197M_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_rst_mig_7series_0_197M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_mig_7series_0_197M_0' is unconnected for instance 'rst_mig_7series_0_197M' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1225]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_mig_7series_0_197M_0' is unconnected for instance 'rst_mig_7series_0_197M' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1225]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_mig_7series_0_197M_0' is unconnected for instance 'rst_mig_7series_0_197M' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1225]
-WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_197M' of module 'design_1_rst_mig_7series_0_197M_0' has 10 connections declared, but only 7 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:1225]
-INFO: [Synth 8-6157] synthesizing module 'design_1_test1_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_test1_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_test1_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-17600-Marlofst/realtime/design_1_test1_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mig_7series_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_mig_7series_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mig_7series_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_mig_7series_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_1' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_2' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_3' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_4' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7071] port 'app_sr_active' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7071] port 'init_calib_complete' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7071] port 'device_temp' of module 'design_1_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'design_1_mig_7series_0_0' has 69 connections declared, but only 58 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:936]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_mig_7series_0_197M_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_rst_mig_7series_0_197M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_mig_7series_0_197M_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_rst_mig_7series_0_197M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_mig_7series_0_197M_0' is unconnected for instance 'rst_mig_7series_0_197M' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:995]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_mig_7series_0_197M_0' is unconnected for instance 'rst_mig_7series_0_197M' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:995]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_mig_7series_0_197M_0' is unconnected for instance 'rst_mig_7series_0_197M' [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:995]
+WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_197M' of module 'design_1_rst_mig_7series_0_197M_0' has 10 connections declared, but only 7 given [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:995]
+INFO: [Synth 8-6157] synthesizing module 'design_1_test1_0_0' [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_test1_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_test1_0_0' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/.Xil/Vivado-36496-Marlofst/realtime/design_1_test1_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
@@ -283,18 +262,18 @@ WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_6_xlconcat is eith
 WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_6_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1676.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1654.504 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -305,30 +284,10 @@ Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newT
 Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/design_1_mig_7series_0_0_in_context.xdc] for cell 'design_1_i/mig_7series_0'
 Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/xbar'
 Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/xbar'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_11/design_1_auto_pc_11/design_1_auto_pc_8_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_11/design_1_auto_pc_11/design_1_auto_pc_8_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/s00_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m00_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m00_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m02_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m02_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m03_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m03_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m04_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m04_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m05_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m05_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m06_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m06_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_6/design_1_auto_pc_6/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m07_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_6/design_1_auto_pc_6/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m07_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_7/design_1_auto_pc_7/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m08_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_7/design_1_auto_pc_7/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m08_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_8/design_1_auto_pc_8/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m09_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_8/design_1_auto_pc_8/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m09_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_9/design_1_auto_pc_9/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m10_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_9/design_1_auto_pc_9/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m10_couplers/auto_pc'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_10/design_1_auto_pc_10/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m11_couplers/auto_pc'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_10/design_1_auto_pc_10/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m11_couplers/auto_pc'
+Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_periph/m01_couplers/auto_pc'
 Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_axi_intc_0/design_1_microblaze_riscv_0_axi_intc_0/design_1_microblaze_riscv_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_intc'
 Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_axi_intc_0/design_1_microblaze_riscv_0_axi_intc_0/design_1_microblaze_riscv_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_riscv_0_axi_intc'
 Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
@@ -343,8 +302,6 @@ Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newT
 Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_sw'
 Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_1_in_context.xdc] for cell 'design_1_i/axi_gpio_rgb0'
 Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_1_in_context.xdc] for cell 'design_1_i/axi_gpio_rgb0'
-Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_led'
-Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_led'
 Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_in_context.xdc] for cell 'design_1_i/axi_gpio_btn'
 Finished Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_in_context.xdc] for cell 'design_1_i/axi_gpio_btn'
 Parsing XDC File [c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_1/design_1_axi_gpio_1_1/design_1_axi_gpio_1_1_in_context.xdc] for cell 'design_1_i/axi_gpio_rgb1'
@@ -446,22 +403,22 @@ Parsing XDC File [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newT
 Finished Parsing XDC File [C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1676.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1654.504 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1676.684 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1654.504 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -566,18 +523,8 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  aut
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mig_7series_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/xbar. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m05_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m06_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m07_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m08_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m09_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m10_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m11_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_axi_intc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_riscv_0_xlconcat. (constraint file  auto generated constraint).
@@ -587,17 +534,16 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0. (const
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_timer_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_sw. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_rgb0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_led. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_btn. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_rgb1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_Anodes. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_Cathodes. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/test1_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -620,25 +566,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1654.504 ; gain = 573.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -656,37 +602,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1662.516 ; gain = 581.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1662.516 ; gain = 581.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1662.516 ; gain = 581.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1662.516 ; gain = 581.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1662.516 ; gain = 581.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1662.516 ; gain = 581.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -699,72 +645,61 @@ Report BlackBoxes:
 |1     |design_1_axi_gpio_0_3                  |         1|
 |2     |design_1_axi_gpio_0_4                  |         1|
 |3     |design_1_axi_gpio_0_2                  |         1|
-|4     |design_1_axi_gpio_0_1                  |         1|
-|5     |design_1_axi_gpio_1_0                  |         1|
-|6     |design_1_axi_gpio_1_1                  |         1|
-|7     |design_1_axi_gpio_0_0                  |         1|
-|8     |design_1_axi_timer_0_0                 |         1|
-|9     |design_1_axi_uartlite_0_0              |         1|
-|10    |design_1_mdm_1_0                       |         1|
-|11    |design_1_microblaze_riscv_0_0          |         1|
-|12    |design_1_microblaze_riscv_0_axi_intc_0 |         1|
-|13    |design_1_xbar_0                        |         1|
-|14    |design_1_auto_pc_0                     |         1|
-|15    |design_1_auto_pc_1                     |         1|
-|16    |design_1_auto_pc_2                     |         1|
-|17    |design_1_auto_pc_3                     |         1|
-|18    |design_1_auto_pc_4                     |         1|
-|19    |design_1_auto_pc_5                     |         1|
-|20    |design_1_auto_pc_6                     |         1|
-|21    |design_1_auto_pc_7                     |         1|
-|22    |design_1_auto_pc_8                     |         1|
-|23    |design_1_auto_pc_9                     |         1|
-|24    |design_1_auto_pc_10                    |         1|
-|25    |design_1_auto_pc_11                    |         1|
-|26    |design_1_mig_7series_0_0               |         1|
-|27    |design_1_rst_mig_7series_0_197M_0      |         1|
-|28    |design_1_test1_0_0                     |         1|
+|4     |design_1_axi_gpio_1_0                  |         1|
+|5     |design_1_axi_gpio_1_1                  |         1|
+|6     |design_1_axi_gpio_0_0                  |         1|
+|7     |design_1_axi_timer_0_0                 |         1|
+|8     |design_1_axi_uartlite_0_0              |         1|
+|9     |design_1_mdm_1_0                       |         1|
+|10    |design_1_microblaze_riscv_0_0          |         1|
+|11    |design_1_microblaze_riscv_0_axi_intc_0 |         1|
+|12    |design_1_xbar_0                        |         1|
+|13    |design_1_auto_pc_0                     |         1|
+|14    |design_1_auto_pc_1                     |         1|
+|15    |design_1_mig_7series_0_0               |         1|
+|16    |design_1_rst_mig_7series_0_197M_0      |         1|
+|17    |design_1_test1_0_0                     |         1|
 +------+---------------------------------------+----------+
 
 Report Cell Usage: 
 +------+-------------------------------------+------+
 |      |Cell                                 |Count |
 +------+-------------------------------------+------+
-|1     |design_1_auto_pc                     |    12|
-|13    |design_1_axi_gpio_0                  |     5|
-|18    |design_1_axi_gpio_1                  |     2|
-|20    |design_1_axi_timer_0                 |     1|
-|21    |design_1_axi_uartlite_0              |     1|
-|22    |design_1_mdm_1                       |     1|
-|23    |design_1_microblaze_riscv_0          |     1|
-|24    |design_1_microblaze_riscv_0_axi_intc |     1|
-|25    |design_1_mig_7series_0               |     1|
-|26    |design_1_rst_mig_7series_0_197M      |     1|
-|27    |design_1_test1_0                     |     1|
-|28    |design_1_xbar                        |     1|
-|29    |IBUF                                 |    21|
-|30    |OBUF                                 |    47|
+|1     |design_1_auto_pc                     |     2|
+|3     |design_1_axi_gpio_0                  |     4|
+|7     |design_1_axi_gpio_1                  |     2|
+|9     |design_1_axi_timer_0                 |     1|
+|10    |design_1_axi_uartlite_0              |     1|
+|11    |design_1_mdm_1                       |     1|
+|12    |design_1_microblaze_riscv_0          |     1|
+|13    |design_1_microblaze_riscv_0_axi_intc |     1|
+|14    |design_1_mig_7series_0               |     1|
+|15    |design_1_rst_mig_7series_0_197M      |     1|
+|16    |design_1_test1_0                     |     1|
+|17    |design_1_xbar                        |     1|
+|18    |IBUF                                 |    21|
+|19    |OBUF                                 |    47|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1662.516 ; gain = 581.391
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1676.684 ; gain = 580.969
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1676.684 ; gain = 580.969
+Synthesis finished with 0 errors, 0 critical warnings and 158 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1662.516 ; gain = 581.391
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1662.516 ; gain = 581.391
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 1676.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1671.676 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1676.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1675.348 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 58a56519
+Synth Design complete | Checksum: ca6aa432
 INFO: [Common 17-83] Releasing license: Synthesis
-120 Infos, 235 Warnings, 0 Critical Warnings and 0 Errors encountered.
+96 Infos, 238 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1676.684 ; gain = 971.715
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1676.684 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1675.348 ; gain = 989.594
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1675.348 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 15:07:05 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 10:31:28 2024...

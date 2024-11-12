@@ -52,7 +52,7 @@
         "OUTPUTDIR": [ { "value": "../../../../../../projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_197M_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2024.1.2" } ],
+        "SWVERSION": [ { "value": "2024.1" } ],
         "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },

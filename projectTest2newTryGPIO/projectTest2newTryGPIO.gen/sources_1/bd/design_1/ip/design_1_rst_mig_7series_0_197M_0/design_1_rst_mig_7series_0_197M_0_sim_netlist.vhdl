@@ -1,8 +1,8 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
--- Date        : Wed Oct 30 14:40:17 2024
+-- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+-- Date        : Mon Nov 11 10:01:56 2024
 -- Host        : Marlofst running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Xilinx/Vivado/EE415/projectTest2newTryGPIO/projectTest2newTryGPIO.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_197M_0/design_1_rst_mig_7series_0_197M_0_sim_netlist.vhdl
@@ -1076,7 +1076,7 @@ entity design_1_rst_mig_7series_0_197M_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_rst_mig_7series_0_197M_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_rst_mig_7series_0_197M_0 : entity is "proc_sys_reset,Vivado 2024.1.2";
+  attribute x_core_info of design_1_rst_mig_7series_0_197M_0 : entity is "proc_sys_reset,Vivado 2024.1";
 end design_1_rst_mig_7series_0_197M_0;
 
 architecture STRUCTURE of design_1_rst_mig_7series_0_197M_0 is
