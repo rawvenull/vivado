@@ -1,0 +1,15 @@
+axi_gpio_0:
+- axi_gpio
+- gpio
+axi_gpio_1:
+- axi_gpio
+- gpio
+axi_uartlite_0:
+- axi_uartlite
+- uartlite
+axi_vga_0:
+- axi_vga
+- None
+microblaze_riscv_0_axi_intc:
+- axi_intc
+- intc

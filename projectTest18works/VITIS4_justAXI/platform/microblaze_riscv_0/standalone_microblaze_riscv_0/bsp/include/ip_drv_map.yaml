@@ -1,0 +1,9 @@
+axi_uartlite_0:
+- axi_uartlite
+- uartlite
+ledtest_0:
+- ledtest
+- None
+microblaze_riscv_0_axi_intc:
+- axi_intc
+- intc

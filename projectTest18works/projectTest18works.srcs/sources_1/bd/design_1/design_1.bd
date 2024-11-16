@@ -1,14 +1,13 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xADF3C1A4DE6C65CF",
+      "boundary_crc": "0xA15CF5F0829862A3",
       "device": "xc7s50csga324-1",
       "gen_directory": "../../../../projectTest18works.gen/sources_1/bd/design_1",
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.1",
-      "validated": "true"
+      "tool_version": "2024.1"
     },
     "design_tree": {
       "rst_clk_wiz_1_100M": "",
@@ -20,8 +19,7 @@
       "mig_7series_0": "",
       "smartconnect_1": "",
       "axi_uartlite_0": "",
-      "axi_gpio_1": "",
-      "ledtest_0": ""
+      "clk_wiz_0": ""
     },
     "interface_ports": {
       "sys": {
@@ -200,27 +198,7 @@
     },
     "ports": {
       "sys_rst": {
-        "direction": "I",
-        "parameters": {
-          "PortType": {
-            "value": "undef",
-            "value_src": "ip_prop"
-          },
-          "PortType.PROP_SRC": {
-            "value": "false",
-            "value_src": "ip_prop"
-          }
-        }
-      },
-      "SW": {
-        "direction": "I",
-        "left": "15",
-        "right": "1"
-      },
-      "LED": {
-        "direction": "O",
-        "left": "15",
-        "right": "0"
+        "direction": "I"
       }
     },
     "components": {
@@ -636,27 +614,68 @@
           }
         }
       },
-      "axi_gpio_1": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "ip_revision": "33",
-        "xci_name": "design_1_axi_gpio_1_0",
-        "xci_path": "ip\\design_1_axi_gpio_1_0\\design_1_axi_gpio_1_0.xci",
-        "inst_hier_path": "axi_gpio_1",
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "14",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
         "parameters": {
-          "C_ALL_INPUTS": {
-            "value": "1"
+          "CLKOUT1_JITTER": {
+            "value": "205.203"
           },
-          "C_GPIO_WIDTH": {
-            "value": "15"
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50.000"
+          },
+          "CLKOUT1_USED": {
+            "value": "true"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "241.320"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "203.434"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "25.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLKOUT3_JITTER": {
+            "value": "175.437"
+          },
+          "CLKOUT3_PHASE_ERROR": {
+            "value": "203.434"
+          },
+          "CLKOUT3_REQUESTED_OUT_FREQ": {
+            "value": "125.000"
+          },
+          "CLKOUT3_USED": {
+            "value": "true"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "clk50MHz"
+          },
+          "CLK_OUT2_PORT": {
+            "value": "clk25MHz"
+          },
+          "CLK_OUT3_PORT": {
+            "value": "clk125MHz"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "22.625"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "45"
+          },
+          "MMCM_CLKOUT2_DIVIDE": {
+            "value": "9"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "3"
           }
         }
-      },
-      "ledtest_0": {
-        "vlnv": "xilinx.com:user:ledtest:1.0",
-        "ip_revision": "3",
-        "xci_name": "design_1_ledtest_0_0",
-        "xci_path": "ip\\design_1_ledtest_0_0\\design_1_ledtest_0_0.xci",
-        "inst_hier_path": "ledtest_0"
       }
     },
     "interface_nets": {
@@ -714,12 +733,6 @@
           "mig_7series_0/S_AXI"
         ]
       },
-      "smartconnect_1_M01_AXI": {
-        "interface_ports": [
-          "smartconnect_1/M01_AXI",
-          "ledtest_0/S00_AXI"
-        ]
-      },
       "smartconnect_1_M02_AXI": {
         "interface_ports": [
           "microblaze_riscv_0_axi_intc/s_axi",
@@ -731,31 +744,13 @@
           "axi_uartlite_0/S_AXI",
           "smartconnect_1/M03_AXI"
         ]
-      },
-      "smartconnect_1_M04_AXI": {
-        "interface_ports": [
-          "axi_gpio_1/S_AXI",
-          "smartconnect_1/M04_AXI"
-        ]
       }
     },
     "nets": {
-      "SW_1": {
-        "ports": [
-          "SW",
-          "axi_gpio_1/gpio_io_i"
-        ]
-      },
       "axi_uartlite_0_interrupt": {
         "ports": [
           "axi_uartlite_0/interrupt",
           "microblaze_riscv_0_xlconcat/In0"
-        ]
-      },
-      "ledtest_0_LED": {
-        "ports": [
-          "ledtest_0/LED",
-          "LED"
         ]
       },
       "mdm_2_Debug_SYS_Rst": {
@@ -773,8 +768,7 @@
           "microblaze_riscv_0_axi_intc/processor_clk",
           "smartconnect_1/aclk",
           "axi_uartlite_0/s_axi_aclk",
-          "axi_gpio_1/s_axi_aclk",
-          "ledtest_0/s00_axi_aclk"
+          "clk_wiz_0/clk_in1"
         ]
       },
       "microblaze_riscv_0_intr": {
@@ -814,9 +808,13 @@
           "microblaze_riscv_0_axi_intc/s_axi_aresetn",
           "mig_7series_0/aresetn",
           "smartconnect_1/aresetn",
-          "axi_uartlite_0/s_axi_aresetn",
-          "axi_gpio_1/s_axi_aresetn",
-          "ledtest_0/s00_axi_aresetn"
+          "axi_uartlite_0/s_axi_aresetn"
+        ]
+      },
+      "rst_clk_wiz_1_100M_peripheral_reset": {
+        "ports": [
+          "rst_clk_wiz_1_100M/peripheral_reset",
+          "clk_wiz_0/reset"
         ]
       },
       "sys_rst_1": {
@@ -837,22 +835,10 @@
         "address_spaces": {
           "Data": {
             "segments": {
-              "SEG_axi_gpio_1_Reg": {
-                "address_block": "/axi_gpio_1/S_AXI/Reg",
-                "offset": "0x40010000",
-                "range": "64K"
-              },
               "SEG_axi_uartlite_0_Reg": {
                 "address_block": "/axi_uartlite_0/S_AXI/Reg",
                 "offset": "0x40600000",
                 "range": "64K"
-              },
-              "SEG_ledtest_0_S00_AXI_reg": {
-                "address_block": "/ledtest_0/S00_AXI/S00_AXI_reg",
-                "offset": "0x44A00000",
-                "range": "64K",
-                "offset_base_param": "C_S00_AXI_BASEADDR",
-                "offset_high_param": "C_S00_AXI_HIGHADDR"
               },
               "SEG_microblaze_riscv_0_axi_intc_Reg": {
                 "address_block": "/microblaze_riscv_0_axi_intc/S_AXI/Reg",
@@ -868,22 +854,10 @@
           },
           "Instruction": {
             "segments": {
-              "SEG_axi_gpio_1_Reg": {
-                "address_block": "/axi_gpio_1/S_AXI/Reg",
-                "offset": "0x40010000",
-                "range": "64K"
-              },
               "SEG_axi_uartlite_0_Reg": {
                 "address_block": "/axi_uartlite_0/S_AXI/Reg",
                 "offset": "0x40600000",
                 "range": "64K"
-              },
-              "SEG_ledtest_0_S00_AXI_reg": {
-                "address_block": "/ledtest_0/S00_AXI/S00_AXI_reg",
-                "offset": "0x44A00000",
-                "range": "64K",
-                "offset_base_param": "C_S00_AXI_BASEADDR",
-                "offset_high_param": "C_S00_AXI_HIGHADDR"
               },
               "SEG_microblaze_riscv_0_axi_intc_Reg": {
                 "address_block": "/microblaze_riscv_0_axi_intc/S_AXI/Reg",

@@ -1,0 +1,20 @@
++================================+================================+=============================================================+
+| Launch Setup Clock             | Launch Hold Clock              | Pin                                                         |
++================================+================================+=============================================================+
+| clk25MHz_design_1_clk_wiz_0_0  | clk25MHz_design_1_clk_wiz_0_0  | design_1_i/VGA_0/inst/temp_pix_reg[2]/D                     |
+| clk25MHz_design_1_clk_wiz_0_0  | clk25MHz_design_1_clk_wiz_0_0  | design_1_i/VGA_0/inst/vde_1_reg/D                           |
+| clk25MHz_design_1_clk_wiz_0_0  | clk25MHz_design_1_clk_wiz_0_0  | design_1_i/VGA_0/inst/vsync_2_reg_srl2/D                    |
+| clk25MHz_design_1_clk_wiz_0_0  | clk25MHz_design_1_clk_wiz_0_0  | design_1_i/VGA_0/inst/hsync_2_reg_srl2/D                    |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/encg/c0_q_reg_srl2/D              |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[1].srl16_i/D         |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[3].srl16_i/D         |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[37].srl16_i/D        |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[38].srl16_i_srlopt/D |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[30].srl16_i_srlopt/D |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[31].srl16_i_srlopt/D |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[39].srl16_i_srlopt/D |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[23].srl16_i_srlopt/D |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[22].srl16_i/D        |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[29].srl16_i/D        |
+| clk125MHz_design_1_clk_wiz_0_0 | clk125MHz_design_1_clk_wiz_0_0 | design_1_i/hdmi_tx_0/inst/srldly_0/srl[2].srl16_i_srlopt/D  |
++--------------------------------+--------------------------------+-------------------------------------------------------------+

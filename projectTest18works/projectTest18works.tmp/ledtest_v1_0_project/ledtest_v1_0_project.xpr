@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="67" Path="c:/xilinx/vivado/ee415/projecttest18works/projecttest18works.tmp/ledtest_v1_0_project/ledtest_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="fb847bcce0f141b9bf2f6c66c1a534fe"/>
+    <Option Name="Id" Val="f4dbfbd05d5a4724815756af2caeab13"/>
     <Option Name="Part" Val="xc7s50csga324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -47,7 +47,9 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Xilinx/Vivado/EE415/ip_repo/myVGA_1_0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Users/NoahG/Downloads/first/ip_repo/ledtest_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../Xilinx/Vivado/EE415/Text Mode VGA/hdmi_tx_1.0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
