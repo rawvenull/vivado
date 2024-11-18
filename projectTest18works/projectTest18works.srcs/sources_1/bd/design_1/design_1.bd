@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA15CF5F0829862A3",
+      "boundary_crc": "0xA15CF5F0481A5C38",
       "device": "xc7s50csga324-1",
       "gen_directory": "../../../../projectTest18works.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -18,8 +18,7 @@
       "microblaze_riscv_0_xlconcat": "",
       "mig_7series_0": "",
       "smartconnect_1": "",
-      "axi_uartlite_0": "",
-      "clk_wiz_0": ""
+      "axi_uartlite_0": ""
     },
     "interface_ports": {
       "sys": {
@@ -613,69 +612,6 @@
             "value": "115200"
           }
         }
-      },
-      "clk_wiz_0": {
-        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "ip_revision": "14",
-        "xci_name": "design_1_clk_wiz_0_0",
-        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
-        "inst_hier_path": "clk_wiz_0",
-        "parameters": {
-          "CLKOUT1_JITTER": {
-            "value": "205.203"
-          },
-          "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "50.000"
-          },
-          "CLKOUT1_USED": {
-            "value": "true"
-          },
-          "CLKOUT2_JITTER": {
-            "value": "241.320"
-          },
-          "CLKOUT2_PHASE_ERROR": {
-            "value": "203.434"
-          },
-          "CLKOUT2_REQUESTED_OUT_FREQ": {
-            "value": "25.000"
-          },
-          "CLKOUT2_USED": {
-            "value": "true"
-          },
-          "CLKOUT3_JITTER": {
-            "value": "175.437"
-          },
-          "CLKOUT3_PHASE_ERROR": {
-            "value": "203.434"
-          },
-          "CLKOUT3_REQUESTED_OUT_FREQ": {
-            "value": "125.000"
-          },
-          "CLKOUT3_USED": {
-            "value": "true"
-          },
-          "CLK_OUT1_PORT": {
-            "value": "clk50MHz"
-          },
-          "CLK_OUT2_PORT": {
-            "value": "clk25MHz"
-          },
-          "CLK_OUT3_PORT": {
-            "value": "clk125MHz"
-          },
-          "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "22.625"
-          },
-          "MMCM_CLKOUT1_DIVIDE": {
-            "value": "45"
-          },
-          "MMCM_CLKOUT2_DIVIDE": {
-            "value": "9"
-          },
-          "NUM_OUT_CLKS": {
-            "value": "3"
-          }
-        }
       }
     },
     "interface_nets": {
@@ -767,8 +703,7 @@
           "microblaze_riscv_0_axi_intc/s_axi_aclk",
           "microblaze_riscv_0_axi_intc/processor_clk",
           "smartconnect_1/aclk",
-          "axi_uartlite_0/s_axi_aclk",
-          "clk_wiz_0/clk_in1"
+          "axi_uartlite_0/s_axi_aclk"
         ]
       },
       "microblaze_riscv_0_intr": {
@@ -809,12 +744,6 @@
           "mig_7series_0/aresetn",
           "smartconnect_1/aresetn",
           "axi_uartlite_0/s_axi_aresetn"
-        ]
-      },
-      "rst_clk_wiz_1_100M_peripheral_reset": {
-        "ports": [
-          "rst_clk_wiz_1_100M/peripheral_reset",
-          "clk_wiz_0/reset"
         ]
       },
       "sys_rst_1": {

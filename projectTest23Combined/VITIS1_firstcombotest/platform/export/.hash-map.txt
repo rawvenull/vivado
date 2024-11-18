@@ -1,0 +1,1 @@
+{"generate.platform":[{"uri":"C:\\Xilinx\\Vivado\\EE415\\projectTest23Combined\\VITIS1_firstcombotest\\platform\\vitis-comp.json","md5":"2595899d68745ed8089f3bdad6b50747"},{"uri":"C:\\Xilinx\\Vivado\\EE415\\projectTest23Combined\\VITIS1_firstcombotest\\platform\\microblaze_riscv_0\\standalone_microblaze_riscv_0\\bsp\\bsp.yaml","md5":"98deb45d13b28f485b9e797109884c2d"}]}

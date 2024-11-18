@@ -1,0 +1,278 @@
+20:15:59 INFO  : updated workspace path: C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest
+20:16:01 INFO  : Successfully created repository data at C:\Users\NoahG\AppData\Local\Temp\rigel_lopper_NoahG13033370287663510985
+20:16:01 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\NoahG\AppData\Local\Temp\rigel_lopper_NoahG16928548745231057734 -r C:\Users\NoahG\AppData\Local\Temp\rigel_lopper_NoahG13033370287663510985\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:16:01 INFO  : Embedded Template List generated successfully
+20:16:02 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\repo.py -st   C:\Xilinx\Vitis\2024.1\data\embeddedsw && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:16:04 INFO  : Successfully created repository data at C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest/.wsdata
+20:16:04 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\NoahG\AppData\Local\Temp\rigel_lopper_NoahG10066839300370244877 -r C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:16:04 INFO  : Embedded Template List generated successfully
+20:20:06 INFO  : Found no platform with name 'design_1_wrapper' in install repositories
+20:20:06 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && xsct.bat C:\Xilinx\Vitis\2024.1\vitisng-server\scripts\platformutil.tcl C:\Xilinx\Vivado\EE415\projectTest23Combined\design_1_wrapper.xsa C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.rigel_lopper_temp_platform\design_1_wrapper\hw\sdt && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:20:14 INFO  : INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vitis/2024.1/data/embeddedsw) loading 2 seconds
+20:20:14 INFO  : SDT generated successfully
+20:20:14 INFO  : Lopper command for cpu List generation: lopper -O C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.rigel_lopper -f -i C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.rigel_lopper_temp_platform\design_1_wrapper\hw\sdt\system-top.dts
+20:20:14 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.rigel_lopper -f -i C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.rigel_lopper_temp_platform\design_1_wrapper\hw\sdt\system-top.dts && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:20:15 INFO  : microblaze_riscv_0
+20:20:15 INFO  : CPU List generated successfully
+20:22:01 INFO  : Platform  platform creation started.
+20:22:01 INFO  : Found no platform with name 'design_1_wrapper' in install repositories
+20:22:01 INFO  : Lopper command for cpu List generation: lopper -O C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.rigel_lopper -f -i C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\hw\sdt\system-top.dts
+20:22:01 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.rigel_lopper -f -i C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\hw\sdt\system-top.dts && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:22:02 INFO  : microblaze_riscv_0
+20:22:02 INFO  : CPU List generated successfully
+20:22:02 INFO  : SDT generated successfully.
+20:22:02 INFO  : created .gitignore file for the project C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform
+20:22:02 INFO  : lopper command to generate BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//create_bsp.py -w C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp -p microblaze_riscv_0 -o standalone -s C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\hw\sdt\system-top.dts -t empty_application -r C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.wsdata\.repo.yaml
+20:22:02 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\create_bsp.py -w C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp -p microblaze_riscv_0 -o standalone -s C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\hw\sdt\system-top.dts -t empty_application -r C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:22:16 INFO  : CMake Warning in libsrc/xiltimer/src/CMakeLists.txt:
+20:22:16 INFO  :   The object file directory
+20:22:16 INFO  : 
+20:22:16 INFO  :     C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/./
+20:22:16 INFO  : 
+20:22:16 INFO  :   has 204 characters.  The maximum full path to an object file is 250
+20:22:16 INFO  :   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+20:22:16 INFO  : 
+20:22:16 INFO  :     core/default_timer/microblaze_riscv_sleep.c.obj
+20:22:16 INFO  : 
+20:22:16 INFO  :   cannot be safely placed under this directory.  The build may not work
+20:22:16 INFO  :   correctly.
+20:22:16 INFO  : 
+20:22:16 INFO  : 
+20:22:16 INFO  : CMake Warning in libsrc/standalone/src/CMakeLists.txt:
+20:22:16 INFO  :   The object file directory
+20:22:16 INFO  : 
+20:22:16 INFO  :     C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/CMakeFiles/xilstandalone.dir/./
+20:22:16 INFO  : 
+20:22:16 INFO  :   has 211 characters.  The maximum full path to an object file is 250
+20:22:16 INFO  :   characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+20:22:16 INFO  : 
+20:22:16 INFO  :     riscv/riscv_invalidate_dcache_range.S.obj
+20:22:16 INFO  : 
+20:22:16 INFO  :   cannot be safely placed under this directory.  The build may not work
+20:22:16 INFO  :   correctly.
+20:22:16 INFO  : 
+20:22:16 INFO  : 
+20:22:16 INFO  : Successfully created Domain at C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+20:22:16 INFO  : Successfully Generated Domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+20:22:16 INFO  : Domain standalone_microblaze_riscv_0 added successfully.
+20:22:16 INFO  : Platform creation finished successfully.
+20:22:16 INFO  : Platform Quick Build initiated.
+20:22:16 INFO  : Generating Export directory
+20:22:16 INFO  : Generated platform metadata for creating application(s) based on platform platform.
+20:22:19 INFO  : BSP build will be initiated for Domain standalone_microblaze_riscv_0
+20:22:19 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+20:22:19 INFO  : lopper command to reconfigure BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+20:22:19 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:22:19 INFO  : Domain reconfigured successfully
+20:22:19 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+20:22:19 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+20:22:19 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:22:23 INFO  : Domain build successfully
+20:22:23 INFO  : Generating Export directory
+20:22:23 INFO  : Platform Build Finished successfully.
+20:25:51 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\validate_bsp.py -t empty_application -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -r C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:25:52 INFO  : Successfully validated template empty_application
+20:25:54 INFO  : lopper command to create baremetal application :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//create_app.py -s C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -t empty_application -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -n app_component -r C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.wsdata\.repo.yaml
+20:25:54 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\validate_bsp.py -t empty_application -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -r C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:25:54 INFO  : Successfully validated template empty_application
+20:25:54 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\create_app.py -s C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -t empty_application -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -n app_component -r C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\.wsdata\.repo.yaml && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:25:57 INFO  : Successfully Created Application sources at C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/src
+20:25:57 INFO  : Successfully created Application C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src
+20:25:57 INFO  : The hardware specification used by project 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+20:25:57 INFO  : The updated bitstream files are copied from platform to folder 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\_ide\bitstream' in project 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component'.
+20:25:57 INFO  : The updated ps init files are copied from platform to folder 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\_ide\psinit' in project 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component'.
+20:25:57 INFO  : created .gitignore file for the project C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component
+20:30:56 INFO  : BSP build will be initiated for Domain standalone_microblaze_riscv_0
+20:30:56 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+20:30:56 INFO  : lopper command to reconfigure BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+20:30:56 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:30:56 INFO  : Domain reconfigured successfully
+20:30:56 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+20:30:56 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+20:30:56 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:30:57 INFO  : Domain build successfully
+20:30:57 INFO  : Generating Export directory
+20:30:57 INFO  : Platform Build Finished successfully.
+20:30:57 INFO  : lopper command to retarget baremetal application :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build
+20:30:57 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+20:30:57 INFO  : Successfully retargeted Application c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src
+20:30:57 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:29:51 INFO  : XSDB server has started successfully from frontend.
+21:29:51 INFO  : It has taken  2secs.
+21:29:52 INFO  : Connection to XSDB Server established.
+21:29:52 INFO  : It has taken  1secs.
+21:29:54 INFO  : Done
+21:29:54 INFO  : connect -url tcp:127.0.0.1:3121
+21:29:55 INFO  : bpremove -all
+21:29:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Urbana V1I1 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:29:56 INFO  : Device configured successfully with "C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/_ide/bitstream/design_1_wrapper.bit"
+21:29:59 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:29:59 INFO  : loadhw -hw C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/platform/export/platform/hw/design_1_wrapper.xsa  -regs
+21:29:59 INFO  : 
+21:29:59 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:29:59 INFO  : rst -system
+21:30:02 INFO  : after 3000
+21:30:02 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:30:02 INFO  : rst -processor
+21:30:03 INFO  : dow C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/build/app_component.elf
+21:30:03 INFO  : con
+21:30:04 INFO  : Testing the connection for 127.0.0.1
+21:36:37 INFO  : The updated bitstream files are copied from platform to folder 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\_ide\bitstream' in project 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component'.
+21:36:37 INFO  : The updated ps init files are copied from platform to folder 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\_ide\psinit' in project 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component'.
+21:36:48 INFO  : BSP build will be initiated for Domain standalone_microblaze_riscv_0
+21:36:48 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:36:48 INFO  : lopper command to reconfigure BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:36:48 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:36:48 INFO  : Domain reconfigured successfully
+21:36:48 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:36:48 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:36:48 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:36:49 INFO  : Domain build successfully
+21:36:49 INFO  : Generating Export directory
+21:36:49 INFO  : Platform Build Finished successfully.
+21:36:49 INFO  : lopper command to retarget baremetal application :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build
+21:36:49 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:36:49 INFO  : Successfully retargeted Application c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src
+21:36:49 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:36:53 INFO  : connect -url tcp:127.0.0.1:3121
+21:36:53 INFO  : bpremove -all
+21:36:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Urbana V1I1 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:37:00 INFO  : Device configured successfully with "C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/_ide/bitstream/design_1_wrapper.bit"
+21:37:03 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:37:03 INFO  : loadhw -hw C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/platform/export/platform/hw/design_1_wrapper.xsa  -regs
+21:37:03 INFO  : 
+21:37:03 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:37:03 INFO  : rst -system
+21:37:06 INFO  : after 3000
+21:37:06 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:37:06 INFO  : rst -processor
+21:37:10 INFO  : dow C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/build/app_component.elf
+21:37:10 INFO  : con
+21:37:11 INFO  : Testing the connection for 127.0.0.1
+21:39:58 INFO  : BSP build will be initiated for Domain standalone_microblaze_riscv_0
+21:39:58 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:39:58 INFO  : lopper command to reconfigure BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:39:58 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:39:59 INFO  : Domain reconfigured successfully
+21:39:59 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:39:59 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:39:59 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:39:59 INFO  : Domain build successfully
+21:39:59 INFO  : Generating Export directory
+21:39:59 INFO  : Platform Build Finished successfully.
+21:39:59 INFO  : lopper command to retarget baremetal application :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build
+21:39:59 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:40:00 INFO  : Successfully retargeted Application c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src
+21:40:00 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:40:14 INFO  : connect -url tcp:127.0.0.1:3121
+21:40:14 INFO  : bpremove -all
+21:40:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Urbana V1I1 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:40:21 INFO  : Device configured successfully with "C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/_ide/bitstream/design_1_wrapper.bit"
+21:40:24 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:40:24 INFO  : loadhw -hw C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/platform/export/platform/hw/design_1_wrapper.xsa  -regs
+21:40:24 INFO  : 
+21:40:24 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:40:24 INFO  : rst -system
+21:40:27 INFO  : after 3000
+21:40:27 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:40:27 INFO  : rst -processor
+21:40:31 INFO  : dow C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/build/app_component.elf
+21:40:31 INFO  : con
+21:40:32 INFO  : Testing the connection for 127.0.0.1
+21:43:20 INFO  : BSP build will be initiated for Domain standalone_microblaze_riscv_0
+21:43:20 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:43:20 INFO  : lopper command to reconfigure BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:43:20 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:43:21 INFO  : Domain reconfigured successfully
+21:43:21 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:43:21 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:43:21 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:43:21 INFO  : Domain build successfully
+21:43:21 INFO  : Generating Export directory
+21:43:21 INFO  : Platform Build Finished successfully.
+21:43:21 INFO  : lopper command to retarget baremetal application :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build
+21:43:21 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:43:21 INFO  : Successfully retargeted Application c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src
+21:43:21 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:43:46 INFO  : connect -url tcp:127.0.0.1:3121
+21:43:46 INFO  : bpremove -all
+21:43:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Urbana V1I1 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:43:53 INFO  : Device configured successfully with "C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/_ide/bitstream/design_1_wrapper.bit"
+21:43:56 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:43:56 INFO  : loadhw -hw C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/platform/export/platform/hw/design_1_wrapper.xsa  -regs
+21:43:56 INFO  : 
+21:43:56 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:43:56 INFO  : rst -system
+21:43:59 INFO  : after 3000
+21:43:59 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:43:59 INFO  : rst -processor
+21:44:00 INFO  : dow C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/build/app_component.elf
+21:44:00 INFO  : con
+21:44:01 INFO  : Testing the connection for 127.0.0.1
+21:44:41 INFO  : BSP build will be initiated for Domain standalone_microblaze_riscv_0
+21:44:41 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:44:41 INFO  : lopper command to reconfigure BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:44:41 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:44:42 INFO  : Domain reconfigured successfully
+21:44:42 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:44:42 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:44:42 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:44:42 INFO  : Domain build successfully
+21:44:42 INFO  : Generating Export directory
+21:44:42 INFO  : Platform Build Finished successfully.
+21:44:42 INFO  : lopper command to retarget baremetal application :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build
+21:44:42 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:44:42 INFO  : Successfully retargeted Application c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src
+21:44:42 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:45:43 INFO  : connect -url tcp:127.0.0.1:3121
+21:45:43 INFO  : bpremove -all
+21:45:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Urbana V1I1 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:45:50 INFO  : Device configured successfully with "C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/_ide/bitstream/design_1_wrapper.bit"
+21:45:53 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:45:53 INFO  : loadhw -hw C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/platform/export/platform/hw/design_1_wrapper.xsa  -regs
+21:45:53 INFO  : 
+21:45:53 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:45:53 INFO  : rst -system
+21:45:56 INFO  : after 3000
+21:45:56 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:45:56 INFO  : rst -processor
+21:45:57 INFO  : dow C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/build/app_component.elf
+21:45:57 INFO  : con
+21:45:58 INFO  : Testing the connection for 127.0.0.1
+21:47:06 INFO  : The updated bitstream files are copied from platform to folder 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\_ide\bitstream' in project 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component'.
+21:47:06 INFO  : The updated ps init files are copied from platform to folder 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\_ide\psinit' in project 'C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component'.
+21:47:09 INFO  : BSP build will be initiated for Domain standalone_microblaze_riscv_0
+21:47:09 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:47:09 INFO  : lopper command to reconfigure BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:47:09 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\reconfig_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:47:10 INFO  : Domain reconfigured successfully
+21:47:10 INFO  : Generating BSP for the domain C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:47:10 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp
+21:47:10 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_bsp.py -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\microblaze_riscv_0\standalone_microblaze_riscv_0\bsp && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:47:10 INFO  : Domain build successfully
+21:47:10 INFO  : Generating Export directory
+21:47:10 INFO  : Platform Build Finished successfully.
+21:47:10 INFO  : lopper command to retarget baremetal application :python C:\Xilinx\Vitis\2024.1\data\embeddedsw/scripts/pyesw//retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build
+21:47:10 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\retarget_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -d C:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\platform\export\platform\sw\standalone_microblaze_riscv_0 -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:47:10 INFO  : Successfully retargeted Application c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src
+21:47:10 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.1\data\embeddedsw\scripts\pyesw\\build_app.py -s c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\src -b c:\Xilinx\Vivado\EE415\projectTest23Combined\VITIS1_firstcombotest\app_component\build && C:\Xilinx\Vitis\2024.1\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+21:47:17 INFO  : connect -url tcp:127.0.0.1:3121
+21:47:17 INFO  : bpremove -all
+21:47:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Urbana V1I1 887100000000A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:47:24 INFO  : Device configured successfully with "C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/_ide/bitstream/design_1_wrapper.bit"
+21:47:27 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:47:27 INFO  : loadhw -hw C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/platform/export/platform/hw/design_1_wrapper.xsa  -regs
+21:47:27 INFO  : 
+21:47:27 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:47:27 INFO  : rst -system
+21:47:30 INFO  : after 3000
+21:47:30 INFO  : targets -set -nocase -filter {name =~ "Hart*"}
+21:47:30 INFO  : rst -processor
+21:47:30 INFO  : dow C:/Xilinx/Vivado/EE415/projectTest23Combined/VITIS1_firstcombotest/app_component/build/app_component.elf
+21:47:30 INFO  : con
+21:47:31 INFO  : Testing the connection for 127.0.0.1
+21:51:39 INFO  : connection terminated
+21:51:39 INFO  : connection terminated
+21:51:39 INFO  : scheduling shutdown timer for 2 seconds ...
+21:51:41 INFO  : Terminating Vitis C++ Server
+21:51:41 INFO  : Vitis C++ Server terminated
