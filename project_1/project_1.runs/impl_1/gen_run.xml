@@ -1,79 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1731888156">
-  <File Type="ROUTE-PWR" Name="inToOut_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="inToOut.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="inToOut_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="inToOut_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="inToOut.msk"/>
-  <File Type="ROUTE-CLK" Name="inToOut_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="inToOut.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="inToOut_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="inToOut.bit"/>
-  <File Type="BG-DRC" Name="inToOut.drc"/>
-  <File Type="BG-BGN" Name="inToOut.bgn"/>
-  <File Type="BG-BIN" Name="inToOut.bin"/>
-  <File Type="BITSTR-RBT" Name="inToOut.rbt"/>
-  <File Type="BITSTR-NKY" Name="inToOut.nky"/>
-  <File Type="BITSTR-BMM" Name="inToOut_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="inToOut.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="inToOut_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="inToOut.sysdef"/>
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1731999923">
+  <File Type="ROUTE-PWR" Name="combinedAudio_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="combinedAudio.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="combinedAudio_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="combinedAudio_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="combinedAudio_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="combinedAudio.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="combinedAudio_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="combinedAudio_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="combinedAudio_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="combinedAudio_opt.dcp"/>
+  <File Type="OPT-DRC" Name="combinedAudio_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="combinedAudio.hwdef"/>
+  <File Type="PWROPT-DCP" Name="combinedAudio_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="combinedAudio_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="combinedAudio_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="combinedAudio_placed.dcp"/>
+  <File Type="PLACE-IO" Name="combinedAudio_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="combinedAudio_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="combinedAudio_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="combinedAudio_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="combinedAudio_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="combinedAudio_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="combinedAudio_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="combinedAudio.bin"/>
+  <File Type="PLACE-TIMING" Name="combinedAudio_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="combinedAudio_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="combinedAudio_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="combinedAudio_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="combinedAudio.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="combinedAudio_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="combinedAudio_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="combinedAudio_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="combinedAudio.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="combinedAudio_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="combinedAudio_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="combinedAudio_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="combinedAudio_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="combinedAudio_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="combinedAudio_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="combinedAudio_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="combinedAudio_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="combinedAudio_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="combinedAudio_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="combinedAudio_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="combinedAudio_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="combinedAudio_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="combinedAudio_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="combinedAudio_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="combinedAudio_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="combinedAudio_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="combinedAudio_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="combinedAudio_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="combinedAudio_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="combinedAudio_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="combinedAudio_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="combinedAudio_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="combinedAudio_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="combinedAudio_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="combinedAudio_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="combinedAudio_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="combinedAudio.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="combinedAudio_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="combinedAudio_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="combinedAudio.nky"/>
+  <File Type="BITSTR-BMM" Name="combinedAudio_bd.bmm"/>
+  <File Type="PDI-FILE" Name="combinedAudio.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="combinedAudio_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="combinedAudio_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="combinedAudio.rcfi"/>
+  <File Type="CFI_FILE" Name="combinedAudio.cfi"/>
+  <File Type="RNPI_FILE" Name="combinedAudio.rnpi"/>
+  <File Type="NPI_FILE" Name="combinedAudio.npi"/>
+  <File Type="RBD_FILE" Name="combinedAudio.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="inToOut.ltx"/>
+  <File Type="BITSTR-LTX" Name="combinedAudio.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="combinedAudio.sysdef"/>
+  <File Type="BG-BGN" Name="combinedAudio.bgn"/>
+  <File Type="BG-DRC" Name="combinedAudio.drc"/>
+  <File Type="RDI-RDI" Name="combinedAudio.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-DRC" Name="inToOut_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="inToOut.hwdef"/>
-  <File Type="PLACE-IO" Name="inToOut_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="inToOut_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="inToOut_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="inToOut_control_sets_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="inToOut_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="inToOut_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="inToOut_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="inToOut_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="inToOut_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="inToOut_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="inToOut_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="inToOut_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="inToOut_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="inToOut_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="inToOut_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="inToOut_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="inToOut_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="inToOut_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="inToOut_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="inToOut_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="inToOut_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="inToOut_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="inToOut_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="inToOut_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="inToOut_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="inToOut_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="inToOut_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="inToOut_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="inToOut_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="inToOut_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="inToOut_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="inToOut_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="inToOut_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="inToOut_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="inToOut_methodology_drc_routed.rpx"/>
-  <File Type="PDI-FILE" Name="inToOut.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="inToOut_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="inToOut_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="inToOut.rcfi"/>
-  <File Type="CFI_FILE" Name="inToOut.cfi"/>
-  <File Type="RNPI_FILE" Name="inToOut.rnpi"/>
-  <File Type="NPI_FILE" Name="inToOut.npi"/>
-  <File Type="RBD_FILE" Name="inToOut.rbd"/>
-  <File Type="ROUTE-RQS" Name="inToOut_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="inToOut_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="combinedAudio_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="combinedAudio_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/pwmOut.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../projectTest23Combined/projectTest23Combined.srcs/sources_1/imports/new/pwmOut.v"/>
+        <Attr Name="ImportTime" Val="1731912941"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/combinedAudio.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../projectTest23Combined/projectTest23Combined.srcs/sources_1/new/combinedAudio.v"/>
+        <Attr Name="ImportTime" Val="1731912941"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pwmOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/CIC.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -81,6 +122,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/pcmToPWM.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -88,19 +130,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/pdmIN.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/inToOut.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/pwmOut.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -118,7 +154,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="inToOut"/>
+      <Option Name="TopModule" Val="combinedAudio"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -160,7 +196,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

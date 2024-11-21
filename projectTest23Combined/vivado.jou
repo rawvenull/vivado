@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Nov 17 22:55:58 2024
-# Process ID: 60624
+# Start of session at: Mon Nov 18 17:50:42 2024
+# Process ID: 11464
 # Current directory: C:/Xilinx/Vivado/EE415/projectTest23Combined
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent60836 C:\Xilinx\Vivado\EE415\projectTest23Combined\projectTest23Combined.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent43436 C:\Xilinx\Vivado\EE415\projectTest23Combined\projectTest23Combined.xpr
 # Log file: C:/Xilinx/Vivado/EE415/projectTest23Combined/vivado.log
 # Journal file: C:/Xilinx/Vivado/EE415/projectTest23Combined\vivado.jou
 # Running On        :Marlofst
@@ -17,11 +17,133 @@
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :16542 MB
-# Swap memory       :25769 MB
-# Total Virtual     :42312 MB
-# Available Virtual :11040 MB
+# Swap memory       :27854 MB
+# Total Virtual     :44397 MB
+# Available Virtual :7711 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Xilinx/Vivado/EE415/projectTest23Combined/projectTest23Combined.xpr
-open_bd_design {C:/Xilinx/Vivado/EE415/projectTest23Combined/projectTest23Combined.srcs/sources_1/bd/design_1/design_1.bd}
 update_compile_order -fileset sources_1
+open_bd_design {C:/Xilinx/Vivado/EE415/projectTest23Combined/projectTest23Combined.srcs/sources_1/bd/design_1/design_1.bd}
+set_property name axi_Custom [get_bd_cells axi_vga_0]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_3
+endgroup
+save_bd_design
+set_property name axisw_1 [get_bd_cells axi_gpio_1]
+set_property name axiSW [get_bd_cells axisw_1]
+set_property name axiLED [get_bd_cells axi_gpio_0]
+set_property name axiRGB [get_bd_cells axi_gpio_2]
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_GPIO2_WIDTH {3} \
+  CONFIG.C_GPIO_WIDTH {3} \
+  CONFIG.C_IS_DUAL {1} \
+] [get_bd_cells axiRGB]
+startgroup
+make_bd_pins_external  [get_bd_pins axiRGB/gpio_io_i]
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {0} \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS_2 {1} \
+] [get_bd_cells axiRGB]
+delete_bd_objs [get_bd_nets gpio_io_i_0_1]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axiRGB/gpio_io_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axiRGB/gpio2_io_o]
+endgroup
+set_property name RGB0 [get_bd_ports gpio_io_o_0]
+set_property name RGB1 [get_bd_ports gpio2_io_o_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property name axiAnode [get_bd_cells axi_gpio_3]
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS_2 {1} \
+  CONFIG.C_GPIO2_WIDTH {4} \
+  CONFIG.C_GPIO_WIDTH {4} \
+  CONFIG.C_IS_DUAL {1} \
+] [get_bd_cells axiAnode]
+startgroup
+make_bd_pins_external  [get_bd_pins axiAnode/gpio_io_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axiAnode/gpio2_io_o]
+endgroup
+set_property name D0_AN [get_bd_ports gpio_io_o_0]
+set_property name D1_AN [get_bd_ports gpio2_io_o_0]
+set_property name axiCathode [get_bd_cells axi_gpio_0]
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS_2 {1} \
+  CONFIG.C_GPIO2_WIDTH {8} \
+  CONFIG.C_GPIO_WIDTH {8} \
+  CONFIG.C_IS_DUAL {1} \
+] [get_bd_cells axiCathode]
+startgroup
+make_bd_pins_external  [get_bd_pins axiCathode/gpio_io_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axiCathode/gpio2_io_o]
+endgroup
+set_property name D0_SEG [get_bd_ports gpio_io_o_0]
+set_property name D1_SEG [get_bd_ports gpio2_io_o_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_riscv_0 (Periph)} Slave {/axiAnode/S_AXI} ddr_seg {Auto} intc_ip {/smartconnect_1} master_apm {0}}  [get_bd_intf_pins axiAnode/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_riscv_0 (Periph)} Slave {/axiCathode/S_AXI} ddr_seg {Auto} intc_ip {/smartconnect_1} master_apm {0}}  [get_bd_intf_pins axiCathode/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_riscv_0 (Periph)} Slave {/axiRGB/S_AXI} ddr_seg {Auto} intc_ip {/smartconnect_1} master_apm {0}}  [get_bd_intf_pins axiRGB/S_AXI]
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {4} \
+] [get_bd_cells axi_gpio_0]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_gpio_0/gpio_io_i]
+endgroup
+set_property name axiBTN [get_bd_cells axi_gpio_0]
+set_property name axiBTN [get_bd_ports gpio_io_i_1]
+set_property name BTN [get_bd_ports axiBTN]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_riscv_0 (Periph)} Slave {/axiBTN/S_AXI} ddr_seg {Auto} intc_ip {/smartconnect_1} master_apm {0}}  [get_bd_intf_pins axiBTN/S_AXI]
+delete_bd_objs [get_bd_ports gpio_io_i_0]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_0
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_quad_spi_0/io0_o]
+endgroup
+set_property name USB_SPI_MOSI [get_bd_ports io0_o_0]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_quad_spi_0/io1_i]
+endgroup
+set_property name USB_SPI_MISO [get_bd_ports io1_i_0]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_quad_spi_0/ss_o]
+endgroup
+set_property name USB_SS_B [get_bd_ports ss_o_0]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_quad_spi_0/cfgclk]
+endgroup
+set_property name USB_SPI_CCLK [get_bd_ports cfgclk_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/mig_7series_0/ui_clk (83 MHz)} Clk_slave {Auto} Clk_xbar {/mig_7series_0/ui_clk (83 MHz)} Master {/microblaze_riscv_0 (Periph)} Slave {/axi_quad_spi_0/AXI_LITE} ddr_seg {Auto} intc_ip {/smartconnect_1} master_apm {0}}  [get_bd_intf_pins axi_quad_spi_0/AXI_LITE]
+connect_bd_net [get_bd_pins mig_7series_0/ui_clk] [get_bd_pins axi_quad_spi_0/ext_spi_clk]
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+reset_run design_1_mig_7series_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8

@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "design_1_axi_vga_0_1",
-    "cell_name": "axi_vga_0",
+    "cell_name": "axi_Custom",
     "component_reference": "user.org:user:axi_vga:1.0",
     "ip_revision": "5",
     "gen_directory": "../../../../../../projectTest23Combined.gen/sources_1/bd/design_1/ip/design_1_axi_vga_0_1",

@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module pwmOut #(parameter freq = 440, ampPercent = 50)
+module pwmOutOld #(parameter freq = 440, ampPercent = 50)
 (
     
     //clocking

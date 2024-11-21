@@ -1,0 +1,27 @@
+axiAnode:
+- axi_gpio
+- gpio
+axiBTN:
+- axi_gpio
+- gpio
+axiCathode:
+- axi_gpio
+- gpio
+axiLED:
+- axi_gpio
+- gpio
+axiRGB:
+- axi_gpio
+- gpio
+axiSW:
+- axi_gpio
+- gpio
+axi_Custom:
+- axi_vga
+- None
+axi_uartlite_0:
+- axi_uartlite
+- uartlite
+microblaze_riscv_0_axi_intc:
+- axi_intc
+- intc

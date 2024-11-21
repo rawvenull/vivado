@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log inToOut.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source inToOut.tcl
+EAStep vivado -log combinedAudio.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source combinedAudio.tcl
